@@ -1,0 +1,103 @@
+{
+  "basicsInfo": {
+    "nombre": "Muebles Imperial",
+    "eslogan": "Diseño-Estilo y Calidad",
+    "email": "mueblesimperial@Hotmailcom",
+    "pais": "Colombia",
+    "departamento": "Valle del Cauca",
+    "ciudad": "Palmira"
+  },
+  "sedes": [
+    {
+      "sede": "Principal",
+      "barrio": "Centro",
+      "direccion": "Calle 36 #24-05",
+      "telefono": "+57 315 2169963"
+    },
+    {
+      "sede": "Secundaria",
+      "barrio": "Centro",
+      "direccion": "Calle tatata, tatata",
+      "telefono": "+57 315 0000000"
+    }
+  ],
+  "redesSociales": [
+    {
+      "nombre": "Facebook",
+      "urls": "https://www.facebook.com/MueblesImperialPalmira"
+    },
+    {
+      "nombre": "Whats App",
+      "urls": "+57 315 2169963"
+    },
+    {
+      "nombre": "Instagram",
+      "urls": "https://www.instagram.com/muebles_imperialpalmira/?hl=es"
+    }
+  ],
+  "comentarios": [
+    {
+      "comentario": "Me gustan mucho sus asientos.",
+      "puntuacion": 4
+    },
+    {
+      "comentario": "El forrado de los muebles es suavecito.",
+      "puntuacion": 5
+    },
+    {
+      "comentario": "El pedido me llego un poquito tarde, pero valio la pena. el comedor era muy bonito.",
+      "puntuacion": 5
+    },
+    {
+      "comentario": "Corrigió la altura y tapizo el marco de mi cama. Me siento más cómodo al dormir.",
+      "puntuacion": 5
+    }
+  ],
+  "productos": [
+    {
+      "nombre": "Sala Cascada",
+      "descripcion": "Sumérgete en el lujo y la comodidad con nuestro exclusivo sillón 'Harmony'. Diseñado con líneas elegantes y contemporáneas, este sillón no solo es una obra maestra visual, sino que también ofrece una experiencia de asiento sin igual.",
+      "url": "https://scontent.fclo8-1.fna.fbcdn.net/v/t1.6435-9/157825247_265957271757105_7996669124555791041_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=b9uqZxWdPKYAX9QJVP0&_nc_ht=scontent.fclo8-1.fna&oh=00_AfCKpXrY4YnNDXkKxcQA0Ha1yqmoqVaWMvamF_0HzSFwZg&oe=65E863B9"
+    },
+    {
+      "nombre": "Sala Malinu",
+      "descripcion": "El tapizado de terciopelo suave al tacto en tono neutro agrega un toque de sofisticación a cualquier espacio. Los detalles de costura cuidadosamente elaborados y las patas de madera maciza resaltan la artesanía excepcional de este sillón.",
+      "url": "https://scontent.fclo8-1.fna.fbcdn.net/v/t1.6435-9/159120178_266445458374953_8202885671195247352_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=Ffv1cbHqrCoAX8JEF_F&_nc_ht=scontent.fclo8-1.fna&oh=00_AfAWvzlNyhvlZC_UjLTpsPYqZnYEdJ1_7BnoFz_yCFkDWg&oe=65E85612"
+    },
+    {
+      "nombre": "mesa de tv Deko",
+      "descripcion": "Equipado con un sistema de relleno de espuma de alta densidad, el sillón 'Harmony' proporciona un apoyo óptimo para una relajación total. Ya sea que estés disfrutando de un buen libro, viendo tus programas favoritos o simplemente descansando después de un largo día, este sillón se convertirá en tu refugio de confort.",
+      "url": "https://scontent.fclo8-1.fna.fbcdn.net/v/t1.6435-9/157170279_266595991693233_5832708791621066947_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=q6DwF49ZpRMAX_63UEu&_nc_ht=scontent.fclo8-1.fna&oh=00_AfDDw52VZzfZlzl9u7UgAcP6hmWiJt34Q7-sQMb5fLtppg&oe=65E86384"
+    },
+    {
+      "nombre": "Biblioteca MDF",
+      "descripcion": "Añade un toque de elegancia a tu hogar con el sillón 'Harmony'. No solo es un mueble funcional, sino también una declaración de estilo que elevará la estética de tu espacio de vida. ¡Descubre el equilibrio perfecto entre diseño y confort con nuestro exclusivo sillón 'Harmony'!",
+      "url": "https://scontent.fclo8-1.fna.fbcdn.net/v/t1.6435-9/159859831_268492791503553_6004764006645974518_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=2nUEcEDHZdYAX8-W7k_&_nc_ht=scontent.fclo8-1.fna&oh=00_AfCTHmSyggiN2-zFRbnK0NAe04_Ohc_uAcsFscmGUXzszw&oe=65E8588A"
+    },
+    {
+      "nombre": "Licorera Hexagonal",
+      "descripcion": "Añade un toque de elegancia a tu hogar con el sillón 'Harmony'. No solo es un mueble funcional, sino también una declaración de estilo que elevará la estética de tu espacio de vida. ¡Descubre el equilibrio perfecto entre diseño y confort con nuestro exclusivo sillón 'Harmony'!",
+      "url": "https://scontent.fclo8-1.fna.fbcdn.net/v/t1.6435-9/159867562_268638374822328_5732574029702654237_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=xTpJbbN3E-sAX82fqgF&_nc_ht=scontent.fclo8-1.fna&oh=00_AfB_lh0kPg80owftPrTe30B1KC2iFIumnv1nHC1URXeqlQ&oe=65E86D56"
+    },
+    {
+      "nombre": "Sala M",
+      "descripcion": "Añade un toque de elegancia a tu hogar con el sillón 'Harmony'. No solo es un mueble funcional, sino también una declaración de estilo que elevará la estética de tu espacio de vida. ¡Descubre el equilibrio perfecto entre diseño y confort con nuestro exclusivo sillón 'Harmony'!",
+      "url": "https://scontent.fclo8-1.fna.fbcdn.net/v/t1.6435-9/161655188_272575891095243_3774749690574761494_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=XZ-XgDhpx7cAX8sdwGn&_nc_ht=scontent.fclo8-1.fna&oh=00_AfDsyL26URtgWmLmCNtgWBHPY45GrgxgaLR5VfpzQNnmug&oe=65E88588"
+    },
+    {
+      "nombre": "Sala Rollito",
+      "descripcion": "Añade un toque de elegancia a tu hogar con el sillón 'Harmony'. No solo es un mueble funcional, sino también una declaración de estilo que elevará la estética de tu espacio de vida. ¡Descubre el equilibrio perfecto entre diseño y confort con nuestro exclusivo sillón 'Harmony'!",
+      "url": "https://scontent.fclo8-1.fna.fbcdn.net/v/t1.6435-9/162030563_273113191041513_1475644490102065324_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=btnaaFBFdn0AX_UGtgo&_nc_ht=scontent.fclo8-1.fna&oh=00_AfC1Y6U8TNogeq4yr9F0Yw5XrmfYfj09X2Om66sVAbEI8Q&oe=65E8707C"
+    },
+    {
+      "nombre": "Sala Rollo Super",
+      "descripcion": "Añade un toque de elegancia a tu hogar con el sillón 'Harmony'. No solo es un mueble funcional, sino también una declaración de estilo que elevará la estética de tu espacio de vida. ¡Descubre el equilibrio perfecto entre diseño y confort con nuestro exclusivo sillón 'Harmony'!",
+      "url": "https://scontent.fclo8-1.fna.fbcdn.net/v/t1.6435-9/161987794_273230834363082_6329060024672906678_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=fFVVhKPkK-cAX_qMfQ2&_nc_ht=scontent.fclo8-1.fna&oh=00_AfCXPqdvq3w8Hm2hPf6HNVm7B2sx2jWFAlP4_BrL3KeOig&oe=65E864B4"
+    },
+    {
+      "nombre": "Sala Viena",
+      "descripcion": "Añade un toque de elegancia a tu hogar con el sillón 'Harmony'. No solo es un mueble funcional, sino también una declaración de estilo que elevará la estética de tu espacio de vida. ¡Descubre el equilibrio perfecto entre diseño y confort con nuestro exclusivo sillón 'Harmony'!",
+      "url": "https://scontent.fclo8-1.fna.fbcdn.net/v/t1.6435-9/162983786_277330317286467_7432008349608244438_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=8jTABHlsEhsAX8m4VWq&_nc_ht=scontent.fclo8-1.fna&oh=00_AfBpeSmTjTMFZc4Mn1lCp32QNDBC4kRFG3dvQT-7uKp20A&oe=65E87747"
+    }
+  ]
+}
