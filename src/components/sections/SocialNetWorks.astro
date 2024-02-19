@@ -1,10 +1,40 @@
 ---
+import IconsInstagram from "../icons/IconsInstagram.astro";
+import IconsFacebook from "../icons/IconsFacebook.astro";
+import IconsWhatsapp from "../icons/IconsWhatsapp.astro";
+import IconsEmail from "../icons/IconsEmail.astro";
+import dataBusiness from "../data/dataBusiness.json";
+const { redesSociales } = dataBusiness;
 
+const SocialIcons = {
+  Facebook: IconsFacebook,
+  WhatsApp: IconsWhatsapp,
+  Instagram: IconsInstagram,
+};
 ---
 
 <section>
-  <div class="testTitle">
-    <h1> SocialNetWorks </h1>
+  <div class="Container">
+    <div class="Title">
+      <h1>Redes Sociales</h1>
+    </div>
+    <div class="Content_SocialNetworks">
+        {redesSociales.map(({ nombre, urls }) => (
+          <div class="Card">
+            <a class="Enlace"
+              href={urls}
+              title={`Visitar ${nombre}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="Icon">
+                {SocialIcons[nombre] && <SocialIcons[nombre] />}
+              </div>
+            </a>
+            <div class="Name">{nombre}</div>
+          </div>
+        ))}
+    </div>
   </div>
 </section>
 
@@ -13,5 +43,72 @@
 </script>
 
 <style>
+  .Container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .Title {
+    font-size: xx-large;
+    color: white;
+  }
+
+  .Content_SocialNetworks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 5px;
+    width: 100%;
+  }
+
+  .Card{
+  }
+
+  .Enlace{
+
+  }
+
+  .Icon{
+    width: 150px;
+    height: 150px;
+  }
+
+  .Name{
+    padding: 5px;
+    font-size: xx-large;
+    color: gold;
+    text-align: center;
+  }
+
+  svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ul {
+  }
+
+  li {
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
 </style>
+
+<!--
+  - Container
+    - Content_SocialNetworks
+      - Card
+        - Enlace
+          - Icon
+        - Name
+-->

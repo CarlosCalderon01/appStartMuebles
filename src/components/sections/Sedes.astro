@@ -1,22 +1,96 @@
 ---
-// Icons
-import IconsCrown from "../../temp/IconsCrown.astro";
-// Data Json
-import dataBusiness from "../data/dataBusiness.json"; // Acceso al json
-const { sedes } = dataBusiness; // Acceso a la basicsInfo
+import dataBusiness from "../data/dataBusiness.json";
+const { sedes } = dataBusiness;
 ---
 
 <section>
-  <div class="testTitle">
-    <h1>Sedes</h1>
-  </div>
-  <div class="ArraySedes">
-    {
-      
-    }
+  <div class="Container">
+    <div class="Content_Sedes">
+      <div class="Title">
+        <h1>Sedes</h1>
+      </div>
+      <div class="AllCards">
+        {
+          sedes.map(({ sede, barrio, direccion, telefono, url }) => {
+            return (
+              <div class="Card">
+                <div class="Url">
+                  <img src={url} alt="Imagen de sede" />
+                </div>
+                <div class="Name">{sede}</div>
+                <div class="Neighborhood">{barrio}</div>
+                <div class="Address">{direccion}</div>
+                <div class="Phone">{telefono}</div>
+              </div>
+            );
+          })
+        }
+      </div>
+    </div>
   </div>
 </section>
 
 <script></script>
 
-<style></style>
+<style>
+  .Container {
+  }
+
+  .Content_Sedes {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+  }
+
+  .Title {
+    font-size: xx-large;
+    color: white;
+  }
+
+  .AllCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+  }
+
+  .Card {
+    border: 5px #e5be01 solid;
+    border-radius: 20px;
+  }
+
+  .Name,
+  .Neighborhood,
+  .Address,
+  .Phone {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: 350px;
+    border-radius: 20px;
+  }
+</style>
+
+<!--
+- Container
+  - Content_Sedes
+    - Card
+      - Url
+        - img
+      - Name
+      - Neighborhood
+      - Address
+      - Phone
+-->

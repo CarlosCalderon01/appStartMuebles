@@ -22,8 +22,103 @@ const { title } = Astro.props;
 </html>
 <style is:global>
   * {
-    border: 2px solid black;
-    margin: 2px;
-    padding: 2px;
+    box-sizing: border-box;
+  }
+
+  body {
+    /*- MARGENES -*/
+    margin: 0px;
+    border: 5px black solid;
+    padding: 5px;
+    /*- TAMAÑOS -*/
+    width: auto;
+    /*- COLOR -*/
+    background-color: #1c1c1c;
+    position: relative;
+  }
+
+  section {
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 </style>
+
+<!-- body :nth-child(){
+      line-height: normal; /*-  -*/
+    height: auto;
+  margin: 0px;
+  border: 5px red solid;
+  padding: 5px;
+  box-sizing: border-box;
+} -->
+
+<!--
+Niveles Html:
+- html
+	- body
+		- main <-- main de la pag index
+			- 
+-->
+
+<!--
+
+CSS HEX:
+  --byzantium: #820263ff;
+  --dogwood-rose: #d90368ff;
+  --timberwolf: #eadedaff;
+  --space-cadet: #2e294eff;
+  --gold: #ffd400ff;
+
+-->
+<!-- 
+.container {
+  /*- COLOR -*/
+  color: white;
+  /*- MARGENES -*/
+  /*- TAMAÑOS -*/
+  /*- UBICACIÓN -*/
+
+  /*- CONTENT -*/
+  text-align: center;
+  flex-flow: center;
+  justify-content: flex-end;
+}
+
+.container :nth-child(n) {
+  border: 5px solid #eadedaff;
+}
+
+.container .BusinessTitulo {
+
+}
+
+.container .BusinessEslogan {
+  font-size: large;
+}
+
+.container .BusinessLocacion {
+  font-size: small;
+}
+-->
+
+<!-- 
+body {
+  /*- FONDOS -*/
+  background-color: #820263ff;
+  /*- BORDEADOS -*/
+  /* border: 5px solid #eadedaff; /**/
+  /*- MARGENES -*/
+  /*- FUENTES -*/
+  font-family: "Times New Roman", Times, serif;
+  font-size: initial;
+  /*- TAMAÑOS -*/
+  height: auto;
+}
+
+section {
+  /*- BORDEADOS -*/
+  border: 5px solid #eadedaff;
+  /*- MARGENES -*/
+} -->

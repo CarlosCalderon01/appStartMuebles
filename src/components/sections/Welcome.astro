@@ -1,37 +1,68 @@
 ---
-// Icons
-import IconsCrown from "../../temp/IconsCrown.astro";
-// Data Json
-import dataBusiness from "../data/dataBusiness.json"; // Acceso al json
-const { basicsInfo } = dataBusiness; // Acceso a la basicsInfo
-const { nombre, eslogan, email, pais, departamento, ciudad } = basicsInfo; // indexar partes
+import IconsCrown from "../icons/IconsCrown.astro";
+import dataBusiness from "../data/dataBusiness.json";
+const { basicsInfo } = dataBusiness;
+const { nombre, eslogan, email, pais, departamento, ciudad } = basicsInfo;
 ---
 
-<!-- "nombre": "Muebles Imperial",
-"eslogan": "Diseño-Estilo y Calidad",
-"email": "mueblesimperial@Hotmailcom",
-"pais": "Colombia",
-"departamento": "Valle del Cauca",
-"ciudad": "Palmira" -->
 <section>
-  <div class="testTitle">
-    <h1>Welcome</h1>
-  </div>
-  <div class="iconsCrownMain">
-    <IconsCrown />
-  </div>
-  <div class="Title">
-    <h1>{nombre}</h1>
-  </div>
-  <div class="Eslogan">
-    <h1>{eslogan}</h1>
-  </div>
-  <div class="Locacion">
-    <h1>{pais + " - " + departamento + " - " + ciudad}</h1>
-  </div>
-  <div class="Correo Electronico">
-    <h1>{email}</h1>
+  <div class="Container">
+    <div class="Content_Welcome">
+      <div class="Icon">
+        <IconsCrown />
+      </div>
+      <div class="Title">
+        <h1>{nombre}</h1>
+      </div>
+      <div class="Additional">
+        <h2>{eslogan}</h2>
+      </div>
+      <div class="Location">
+        <p>{pais + " - " + departamento + " - " + ciudad}</p>
+      </div>
+    </div>
   </div>
 </section>
 
-<style></style>
+<style>
+  .Content_Welcome {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 1em;
+    flex-wrap: nowrap;
+  }
+
+  .Icon {
+    margin: 2em;
+  }
+
+  .Title {
+    font-family: "Times New Roman";
+    -webkit-text-stroke: 3px white;
+    font-size: xxx-large;
+    text-transform: uppercase;
+    color: #ffd400ff;
+    text-shadow:
+      1px 1px 2px white,
+      0 0 1em white,
+      0 0 1em white;
+  }
+
+  .Additional {
+    font-family: "Times New Roman";
+  }
+
+  .Content_Welcome h1,
+  h2,
+  p {
+    margin: 5px;
+  }
+
+  .Content_Welcome h2,
+  p {
+    color: white;
+  }
+</style>
