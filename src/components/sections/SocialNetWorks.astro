@@ -6,13 +6,12 @@ import IconsEmail from "../icons/IconsEmail.astro";
 import dataBusiness from "../data/dataBusiness.json";
 const { redesSociales } = dataBusiness;
 
-const SocialIcons = {
+const SocialIcons: Record<string, any> = {
   Facebook: IconsFacebook,
   WhatsApp: IconsWhatsapp,
   Instagram: IconsInstagram,
 };
 ---
-
 <section>
   <div class="Container">
     <div class="Title">
@@ -41,6 +40,7 @@ const SocialIcons = {
 <script>
 
 </script>
+
 
 <style>
   .Container{
@@ -111,4 +111,23 @@ const SocialIcons = {
         - Enlace
           - Icon
         - Name
+-->
+
+
+<!-- 
+{redesSociales.map(({ nombre, urls }) => (
+<div class="Card">
+  <a class="Enlace"
+    href={urls}
+    title={`Visitar ${nombre}`}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <div class="Icon">
+      {SocialIcons[nombre] && <SocialIcons[nombre] />}
+    </div>
+  </a>
+  <div class="Name">{nombre}</div>
+</div>
+))}
 -->
