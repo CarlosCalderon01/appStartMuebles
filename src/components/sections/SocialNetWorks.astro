@@ -1,49 +1,69 @@
 ---
+// Importa los iconos
 import IconsInstagram from "../icons/IconsInstagram.astro";
 import IconsFacebook from "../icons/IconsFacebook.astro";
 import IconsWhatsapp from "../icons/IconsWhatsapp.astro";
-import IconsEmail from "../icons/IconsEmail.astro";
-import dataBusiness from "../data/dataBusiness.json";
-const { redesSociales } = dataBusiness;
-
-const SocialIcons: Record<string, any> = {
-  Facebook: IconsFacebook,
-  WhatsApp: IconsWhatsapp,
-  Instagram: IconsInstagram,
-};
 ---
+
 <section>
   <div class="Container">
     <div class="Title">
       <h1>Redes Sociales</h1>
     </div>
     <div class="Content_SocialNetworks">
-        {redesSociales.map(({ nombre, urls }) => (
-          <div class="Card">
-            <a class="Enlace"
-              href={urls}
-              title={`Visitar ${nombre}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div class="Icon">
-                {SocialIcons[nombre] && <SocialIcons[nombre] />}
-              </div>
-            </a>
-            <div class="Name">{nombre}</div>
+      <!-- #- Componente 1 -# -->
+      <div class="Card">
+        <a
+          class="Enlace"
+          href="https://www.facebook.com/MueblesImperialPalmira"
+          title={`Visitar Facebook`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="Icon">
+            <IconsFacebook />
           </div>
-        ))}
+        </a>
+        <div class="Name">Facebook</div>
+      </div>
+      <!-- #- Componente 2 -# -->
+      <div class="Card">
+        <a
+          class="Enlace"
+          href="https://wa.link/a81jip"
+          title={`Visitar WhatsApp`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="Icon">
+            <IconsWhatsapp />
+          </div>
+        </a>
+        <div class="Name">WhatsApp</div>
+      </div>
+      <!-- #- Componente 3 -# -->
+      <div class="Card">
+        <a
+          class="Enlace"
+          href="https://www.instagram.com/muebles_imperialpalmira/?hl=es"
+          title={`Visitar Instagram`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="Icon">
+            <IconsInstagram />
+          </div>
+        </a>
+        <div class="Name">Instagram</div>
+      </div>
     </div>
   </div>
 </section>
 
-<script>
-
-</script>
-
+<script></script>
 
 <style>
-  .Container{
+  .Container {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -56,7 +76,7 @@ const SocialIcons: Record<string, any> = {
     color: white;
   }
 
-  .Content_SocialNetworks{
+  .Content_SocialNetworks {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -64,19 +84,18 @@ const SocialIcons: Record<string, any> = {
     width: 100%;
   }
 
-  .Card{
+  .Card {
   }
 
-  .Enlace{
-
+  .Enlace {
   }
 
-  .Icon{
+  .Icon {
     width: 150px;
     height: 150px;
   }
 
-  .Name{
+  .Name {
     padding: 5px;
     font-size: xx-large;
     color: gold;
@@ -101,7 +120,6 @@ const SocialIcons: Record<string, any> = {
     align-items: center;
     flex-direction: column;
   }
-
 </style>
 
 <!--
@@ -112,7 +130,6 @@ const SocialIcons: Record<string, any> = {
           - Icon
         - Name
 -->
-
 
 <!-- 
 {redesSociales.map(({ nombre, urls }) => (
